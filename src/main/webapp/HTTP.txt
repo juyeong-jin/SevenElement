@@ -1,0 +1,43 @@
+GET / HTTP/1.1
+Host : www.google.com:80
+
+GET /SevenElement/sessioncreate HTTP/1.1
+Host: localhost:8080
+
+GET /TwoDB/localization.jsp HTTP/1.1
+Host: localhost:8080
+Accept-Language: ja
+
+#########
+#Create
+#########
+
+GET /SevenElement/sessioncreate?loginid=y01 HTTP/1.1
+Host: localhost:80
+Cookie: JSESSIONID=6651A104F3F5BF39816233C05D5F30C3;
+
+
+GET /SevenElement/sessioncreate?loginid=y02 HTTP/1.1
+Host: localhost:80
+Cookie: JSESSIONID=EF9A38D359821A00DB784E8808D1DD60;
+
+
+#########
+#Read
+#########
+
+GET /SevenElement/session/sessionread HTTP/1.1
+Host: localhost:80
+Cookie: JSESSIONID=6651A104F3F5BF39816233C05D5F30C3;
+
+GET /SevenElement/session/sessionread HTTP/1.1
+Host: localhost:80
+Cookie: JSESSIONID=EF9A38D359821A00DB784E8808D1DD60;
+
+#########
+#Delete
+#########
+
+GET /SevenElement/session/sessiondelete HTTP/1.1
+Host: localhost:80
+Cookie: JSESSIONID=

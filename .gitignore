@@ -1,0 +1,8 @@
+.classpath
+.project
+.settings/
+NewFile.xml
+deploy.bat
+forJSP mk.2.bat
+jsession.txt
+target/
